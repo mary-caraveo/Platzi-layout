@@ -6,7 +6,7 @@
   background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   position: relative;
   z-index: 31;
   right: 0;
@@ -46,6 +46,18 @@
   border-right: 1px solid #fff;
 }
 
+.menu-dropdown {
+  display: none;
+  float: right;
+  font-size: 13px;
+}
+
+.menu-dropdown button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
 .menu ul {
   display: flex;
   margin: 0;
@@ -75,6 +87,16 @@
 }
 
 .actions a {
+  text-decoration: none;
+  color: white;
+  padding-right: 24px;
+}
+
+.actions_movile {
+  display: none;
+}
+
+.actions_movile a {
   text-decoration: none;
   color: white;
   padding-right: 24px;
@@ -236,5 +258,39 @@ p {
       "description description"
       "form form"
       "countdown countdown";
+  }
+  .header-container {
+    grid-template-columns: auto auto;
+  }
+
+  .nav-header {
+    display: grid;
+    grid-template-columns: 1fr 62px 90px 40px;
+    grid-template-areas: "vacio actions login menu";
+  }
+
+  .actions,
+  .inputSearch,
+  .menu {
+    display: none;
+  }
+
+  .actions_movile {
+    display: grid;
+    grid-area: actions;
+  }
+
+  .buttonLogin {
+    padding-right: 0;
+  }
+
+  .buttonLogin a {
+    padding: 7px 1px 5px;
+  }
+
+  .menu-dropdown {
+    display: grid;
+    grid-area: menu;
+    padding-left: 1px;
   }
 }
