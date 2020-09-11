@@ -28,7 +28,7 @@
 }
 
 .logo img {
-  width: 90px;
+  width: 88px;
 }
 
 .nav-header {
@@ -59,7 +59,6 @@
 }
 
 .menu ul {
-  display: flex;
   margin: 0;
   padding: 2px 12px;
 }
@@ -77,9 +76,6 @@
   cursor: pointer;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .actions {
@@ -109,19 +105,18 @@
 
 .buttonLogin {
   grid-area: login;
-  padding-right: 24px;
+  padding-right: 14px;
   font-size: 13px;
 }
 
 .buttonLogin a {
   display: inline-block;
-  padding: 7px 0.4em 5px;
+  padding: 8px 0.8em 6px 0.8em;
   border-radius: 3px;
-  background-color: #98ca3f;
+  background-color: #95ca3e;
   text-decoration: none;
   text-align: center;
   color: white;
-  width: 100%;
 }
 
 .buttonLogin a:hover {
@@ -145,7 +140,7 @@
   border-radius: 5px 0 0 5px;
   border: 1px solid #d9dfe6;
   padding: 8px 0px 8px 16px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .inputSearch button {
@@ -162,6 +157,7 @@
   width: 16px;
 }
 
+/* Termina header */
 .actions-content {
   display: block;
   width: 320px;
@@ -169,22 +165,22 @@
   position: absolute;
   color: #273b47;
   margin: 0;
-  top: 4%;
-  background-color: #fafafa;
-  border-radius: 5px;
+  background-color: transparent;
 }
 
 .arrow-top {
-  margin: 0 40% 0 auto;
+  margin: 0 45% 0 auto;
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 10px solid #3a3b3f;
+  border-bottom: 10px solid #ffffff;
 }
 
 .planes {
   padding: 20px 14px 10px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .planes-content {
@@ -232,6 +228,11 @@
   color: white;
 }
 
+.button-info:hover {
+  box-shadow: 0 2px 13px 0 rgba(88, 144, 45, 0.49);
+  color: #fff;
+}
+
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -241,22 +242,25 @@
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: all 1s;
 }
+
 #overlay:target {
   opacity: 1;
   pointer-events: auto;
+  margin-top: 2.8%;
 }
-/* Termina header */
+
+/* termina overlay */
 
 .hero {
-  background: #23475b;
+  background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
   color: white;
   padding: 32px 15px;
   display: grid;
   grid-template-columns: minmax(auto, 1024px);
   justify-content: center;
 }
+
 .hero-container {
   display: grid;
   grid-template-columns: 70px 1fr 320px;
@@ -266,24 +270,27 @@
     ". countdown form";
   grid-gap: 10px;
 }
+
 .badge {
   grid-area: badge;
 }
+
 .badge img {
   max-width: 70px;
 }
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
 }
+
 .title {
   grid-area: title;
   font-size: 36px;
-  font-weight: normal;
-  margin: 0;
-  display: flex;
+  font-weight: bold;
   align-items: center;
 }
+
 .form {
   grid-area: form;
   text-align: center;
@@ -291,6 +298,7 @@ body {
   padding: 1.5em;
   border-radius: 10px;
 }
+
 .form input {
   width: 100%;
   padding: 10px;
@@ -298,13 +306,15 @@ body {
   border: 1px solid #dbdbe2;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
+
 .form p {
   font-size: 20px;
   color: #3a3b3f;
   margin-bottom: 1em;
 }
+
 .form button {
   background: #98ca3f;
   color: white;
@@ -315,30 +325,41 @@ body {
   border-bottom: 5px solid #6d932b;
   display: inline-block;
 }
+
+.form button:hover {
+  box-shadow: 0 2px 13px 0 rgba(88, 144, 45, 0.49);
+  color: #fff;
+}
+
 .countdown {
   grid-area: countdown;
 }
+
 .countdown p {
   font-size: 20px;
-  text-align: center;
   font-weight: 300;
 }
+
 .countdown span {
   font-size: 33px;
 }
+
 .countdown span:after {
   content: ":";
   display: inline-block;
   margin: 0 5px;
 }
+
 .countdown span:last-child:after {
   display: none;
 }
 p {
   margin: 0;
 }
+
 .description {
   grid-area: description;
+  margin: 0 5.4em 1em 0;
 }
 
 @media screen and (max-width: 768px) {
