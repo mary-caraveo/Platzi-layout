@@ -102,6 +102,11 @@
   padding-right: 24px;
 }
 
+.actions_movile button {
+  border: none;
+  background-color: transparent;
+}
+
 .buttonLogin {
   grid-area: login;
   padding-right: 24px;
@@ -157,6 +162,91 @@
   width: 16px;
 }
 
+.actions-content {
+  display: block;
+  width: 320px;
+  right: 280px;
+  position: absolute;
+  color: #273b47;
+  margin: 0;
+  top: 4%;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.arrow-top {
+  margin: 0 40% 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 10px solid #3a3b3f;
+}
+
+.planes {
+  padding: 20px 14px 10px;
+}
+
+.planes-content {
+  display: grid;
+  grid-template-areas:
+    "figure title"
+    "description description"
+    "buttons buttons";
+  grid-template-columns: 40px auto;
+  margin-bottom: 20px;
+}
+
+.planes-content img {
+  grid-area: figure;
+  width: 36px;
+}
+
+.planes-content h2 {
+  color: #606164;
+  font-weight: 600;
+  grid-area: title;
+  margin-top: 6px;
+}
+.planes-content p {
+  color: #606164;
+  font-size: 14px;
+  grid-area: description;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.planes-content .button-info {
+  grid-area: buttons;
+  background-color: #85c638;
+  padding: 8px 0.8em 6px;
+  box-shadow: 0 1px 1px 0 #58902d;
+  border-radius: 3px;
+}
+
+.planes-content .button-info a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#overlay:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* Termina header */
 
 .hero {
@@ -250,6 +340,7 @@ p {
 .description {
   grid-area: description;
 }
+
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 70px 1fr;
@@ -292,5 +383,13 @@ p {
     display: grid;
     grid-area: menu;
     padding-left: 1px;
+  }
+
+  .actions-content {
+    left: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
   }
 }
