@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -368,9 +369,28 @@ p {
     grid-template-areas:
       "badge title"
       "description description"
-      "form form"
-      "countdown countdown";
+      "countdown countdown"
+      "form form";
   }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .countdown p {
+    text-align: center;
+  }
+
+  .countdown span {
+    font-size: 28px;
+  }
+
+  .form {
+    margin-top: 10px;
+  }
+
   .header-container {
     grid-template-columns: auto auto;
   }
@@ -397,7 +417,7 @@ p {
   }
 
   .buttonLogin a {
-    padding: 7px 1px 5px;
+    padding: 8px 0.6em 6px 0.6em;
   }
 
   .menu-dropdown {
@@ -412,5 +432,9 @@ p {
     position: absolute;
     width: 100%;
     z-index: 5;
+  }
+
+  .description {
+    margin: 0;
   }
 }
