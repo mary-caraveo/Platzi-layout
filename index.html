@@ -11,7 +11,7 @@
 
 <header class="header header-container">
     <div class="logo">
-        <img src="assets/logo-platzi.PNG" alt="logo">
+        <a href="#"><img src="assets/logo-platzi.PNG" alt="logo"></a>
     </div>
 
     <div class="nav-header">
@@ -29,12 +29,13 @@
         </div>
 
         <div class="menu-dropdown">
-            <button><span>Menú</span></button>
+            <a href="#">Menú</a>
         </div>
 
         <!-- Planes-vista desktop-overlay -->
         <div class="actions">
-            <a href="#overlay">Iniciar mi plan</a>
+            <a id="modal-over" href="#overlay">Iniciar mi plan</a>
+            <a id="home-modal" href="#">Iniciar mi plan</a>
             <div id="overlay" class="modal">
                 <div class="actions-content">
                     <div class="arrow-top"><a href="#"></a></div>
@@ -74,7 +75,7 @@
         <div class="inputSearch">
             <form action="/search/">
                 <input type="text" placeholder="Buscar en Platzi">
-                <button> <img src="assets/icono-search.PNG" alt=""></button>
+                <a href="#"><img src="assets/icono-search.PNG" alt="icono"></a>
             </form>
         </div>
     </div>

@@ -104,6 +104,12 @@
   background-color: transparent;
 }
 
+.menu-dropdown a {
+  color: white;
+  text-decoration: none;
+  text-align: end;
+}
+
 .buttonLogin {
   grid-area: login;
   padding-right: 14px;
@@ -112,7 +118,7 @@
 
 .buttonLogin a {
   display: inline-block;
-  padding: 8px 0.8em 6px 0.8em;
+  padding: 7px 0.8em 6px;
   border-radius: 3px;
   background-color: #95ca3e;
   text-decoration: none;
@@ -142,20 +148,22 @@
   border: 1px solid #d9dfe6;
   padding: 8px 0px 8px 16px;
   font-size: 12px;
+  outline: none;
 }
 
-.inputSearch button {
+.inputSearch a {
   background-color: #95ca3e;
   border: none;
   border-radius: 0 5px 5px 0;
-  grid-area: button;
-  padding: 6px;
   width: 50px;
   cursor: pointer;
+  outline: none;
 }
 
-.inputSearch button img {
-  width: 16px;
+.inputSearch a img {
+  width: 20px;
+  margin: 0 15px;
+  padding-top: 5px;
 }
 
 /* Termina header */
@@ -251,6 +259,14 @@
   margin-top: 2.8%;
 }
 
+#home-modal {
+  display: none;
+}
+
+#modal-over {
+  display: block;
+}
+
 /* termina overlay */
 
 .hero {
@@ -308,6 +324,7 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 12px;
+  outline-color: #98ca3f;
 }
 
 .form p {
@@ -325,6 +342,7 @@ body {
   font-size: 16px;
   border-bottom: 5px solid #6d932b;
   display: inline-block;
+  outline: none;
 }
 
 .form button:hover {
@@ -417,7 +435,7 @@ p {
   }
 
   .buttonLogin a {
-    padding: 8px 0.6em 6px 0.6em;
+    padding: 7px 0.6em 6px;
   }
 
   .menu-dropdown {
