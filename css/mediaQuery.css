@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 70px 1fr;
+    grid-template-areas:
+      "badge title"
+      "description description"
+      "countdown countdown"
+      "form form";
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .countdown p {
+    text-align: center;
+  }
+
+  .countdown span {
+    font-size: 28px;
+  }
+
+  .form {
+    margin-top: 10px;
+  }
+
+  .header-container {
+    grid-template-columns: auto auto;
+  }
+
+  .nav-header {
+    display: grid;
+    grid-template-columns: 1fr 62px 90px 40px;
+    grid-template-areas: "vacio actions login menu";
+  }
+
+  .actions,
+  .inputSearch,
+  .menu {
+    display: none;
+  }
+
+  .actions_movile {
+    display: grid;
+    grid-area: actions;
+  }
+
+  .buttonLogin {
+    padding-right: 0;
+  }
+
+  .buttonLogin a {
+    padding: 7px 0.5em 7px;
+  }
+
+  .menu-dropdown {
+    display: grid;
+    grid-area: menu;
+    padding-left: 1px;
+  }
+
+  .actions-content {
+    left: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .description {
+    margin: 0;
+  }
+}
